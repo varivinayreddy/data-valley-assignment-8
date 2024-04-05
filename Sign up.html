@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+
+<h1>Sign up</h1>
+
+<form action="/submit_form" method="post">
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="full name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="gmail id"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="8 characters"><br><br>
+
+    <label for="cpassword">Confirm Password:</label><br>
+    <input type="password" id="cpassword" name="cpassword" placeholder="8 characters"><br><br>
+    
+    <label for="dob">Date Of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+
+    <label for="gender">Gender:</label><br> 
+ 
+    Male <input type="radio" name="gender" value="male">
+    Female <input type="radio" name="gender" value="female">
+    Other <input type="radio" name="gender" value="other"><br><br>
+
+
+    <label for="photo">Insert your photo: </label><br>
+    <input type="file" id="photo" name="photo"><br><br>
+
+    <label for="resume">Insert your resume: </label><br>
+    <input type="file" id="resume" name="resume"><br><br>
+
+   <label for="security_question">Security Question:</label><br>
+   <select id="security_question" name="security_question">
+    <option value="q1">What is your mother's maiden name?</option>
+    <option value="q2">What city were you born in?</option>
+    <option value="q3">What is your favorite book?</option>
+    <option value="q4">What is the name of your first pet?</option>
+   </select>
+   <br><br>
+   <label for="security_answer">Your answer:</label>
+   <input type="text" id="security_answer" name="security_answer" required>
+<br><br>
+
+    
+    <input type="checkbox" id="terms" name="terms">
+    I agree to the terms and conditions<br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+</body>
+</html>
